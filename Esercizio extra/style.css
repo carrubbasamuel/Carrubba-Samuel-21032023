@@ -135,6 +135,7 @@ button{
 
 .btn{
     justify-content: center;
+    align-items: center;
     font-size: 18px;
 
 }
@@ -194,3 +195,16 @@ div.second-conteiner>div.flex>div.flex::before{
     border-radius: 30px;
     z-index: -1;
 } 
+
+div.second-conteiner>div.flex>div.flex>div.flex{
+    align-items: center;
+}
+
+div.second-conteiner>div.flex>div.flex>div.flex>h1{
+    font-size: 50px;
+    color: #cb2376;
+}
+
+div.second-conteiner>div.flex>div.flex>div.flex>h2{
+    margin-left: 10px;
+}
