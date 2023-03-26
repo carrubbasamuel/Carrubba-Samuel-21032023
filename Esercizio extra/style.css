@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     color: white;
     user-select: none;
 }
@@ -44,10 +44,22 @@ div.menu{
     align-items: center;
 }
 
-.navbar>div.menu>span{
-    margin: 0 20px;
-    font-size: 18px;
+
+.navbar>div.menu>div.flex{
+    align-items: center;
+    margin: 0 10px;
 }
+
+
+.navbar>div.menu>div.flex>span{
+    font-family: 'Mulish', sans-serif;
+    margin: 0 5px;
+}
+
+.navbar>div.menu>div.flex>ion-icon{
+    font-size: px;
+}
+
 
 .navbar>div.menu>button{
     margin: 0 5px;
@@ -92,7 +104,6 @@ div.conteiner>div{
 div.conteiner>div>ul{
     padding-left: 30px;
     font-size: 24px;
-    
 }
 
 
@@ -119,6 +130,7 @@ div.conteiner>div>p{
 
 div.conteiner>div.flex>h1{
     font-size: 50px;
+    font-family: 'Mulish', sans-serif;
 }
 
 
@@ -151,40 +163,53 @@ button{
 
 /* -----------------------Second section------------------- */
 
-
+main>div.scnd-conteiner{
+    /*background: linear-gradient(180deg, #101023, #1a2354);*/
+    padding: 50px;
+}
 
 .second-conteiner{
     flex-flow: column nowrap;
     align-items: center;
     width: 90%;
     margin: 100px;
+    
 }
 
 .second-conteiner>p{
     text-align: center;
     font-size: 24px;
+    margin-top: 30px;
+}
+
+
+.second-conteiner>h1{
+    font-size: 50px;
+    font-family: 'Mulish', sans-serif;
 }
 
 /* Card */
 
 div.second-conteiner>div.flex{
     justify-content: space-around;
+    align-items: baseline;
     margin-top: 100px;
-    width: 90%;
+    height: 200px;
+    width: 100%;
 }
 
 
 
-div.second-conteiner>div.flex>div.flex{
-   width: 300px;
+div.scnd-conteiner>div.second-conteiner>div.flex>div.flex{
+   flex-basis: 22%;
    flex-flow: column nowrap;
    position: relative;
    padding: 30px;
-   background: linear-gradient(90deg,#231f9a 0%,#131b5d 100%);
-   border-radius: 30px;
+   background: linear-gradient(90deg, #101023, #1a2354);
+   border-radius: 20px;
 }
 
-div.second-conteiner>div.flex>div.flex::before{
+div.scnd-conteiner>div.second-conteiner>div.flex>div.flex::before{
     content: "";
     position: absolute;
     top: -5px;left: -5px;right: 0;bottom: 0;
@@ -192,7 +217,7 @@ div.second-conteiner>div.flex>div.flex::before{
     height: 100%; 
     padding: 5px;
     background: linear-gradient(90deg,#2d27df 0%,#cb2376 100%);
-    border-radius: 30px;
+    border-radius: 20px;
     z-index: -1;
 } 
 
@@ -207,4 +232,9 @@ div.second-conteiner>div.flex>div.flex>div.flex>h1{
 
 div.second-conteiner>div.flex>div.flex>div.flex>h2{
     margin-left: 10px;
+}
+
+div.second-conteiner>div.flex>div.flex>p{
+    margin-top: 15px;
+    line-height: 30px;
 }
