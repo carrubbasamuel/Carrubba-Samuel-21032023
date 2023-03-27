@@ -204,7 +204,7 @@ div.scnd-conteiner>div.second-conteiner>div.flex>div.flex{
    flex-basis: 22%;
    flex-flow: column nowrap;
    position: relative;
-   padding: 30px;
+   padding: 30px 20px;
    background: linear-gradient(90deg, #101023, #1a2354);
    border-radius: 20px;
 }
